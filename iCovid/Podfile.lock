@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - CLTypingLabel (0.4.0)
+  - Kingfisher (6.3.0)
+  - lottie-ios (3.2.3)
+  - ReachabilitySwift (5.0.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - CLTypingLabel
+  - Kingfisher
+  - lottie-ios
+  - ReachabilitySwift
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - CLTypingLabel
+    - Kingfisher
+    - lottie-ios
+    - ReachabilitySwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  CLTypingLabel: 95a7d1faf7e3d1d952cd11cb0491d17d80c50934
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 1e14b7a3029a07b38b10e24f84bc0b86cb81f8a8
+
+COCOAPODS: 1.10.1

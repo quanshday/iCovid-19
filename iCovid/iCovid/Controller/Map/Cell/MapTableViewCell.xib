@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="e9a-UT-IdX" customClass="MapTableViewCell" customModule="iCovid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e9a-UT-IdX" id="9cd-fK-rEi">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="5sK-UT-z2O">
+                        <rect key="frame" x="20" y="10" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="5sK-UT-z2O" secondAttribute="height" id="FLn-Op-QoX"/>
+                            <constraint firstAttribute="width" constant="90" id="hpt-Zo-8Sh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VietNam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9d-AG-aeC">
+                        <rect key="frame" x="160" y="45" width="228" height="20"/>
+                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.20031139249999999" green="0.29061353210000002" blue="0.4157025218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="v9d-AG-aeC" firstAttribute="centerY" secondItem="9cd-fK-rEi" secondAttribute="centerY" id="3vO-l3-KAC"/>
+                    <constraint firstItem="5sK-UT-z2O" firstAttribute="top" secondItem="9cd-fK-rEi" secondAttribute="top" constant="10" id="AyT-p1-tQi"/>
+                    <constraint firstItem="v9d-AG-aeC" firstAttribute="leading" secondItem="5sK-UT-z2O" secondAttribute="trailing" constant="50" id="H6h-O8-5G6"/>
+                    <constraint firstAttribute="bottom" secondItem="5sK-UT-z2O" secondAttribute="bottom" constant="10" id="PV7-d7-kVI"/>
+                    <constraint firstItem="5sK-UT-z2O" firstAttribute="centerY" secondItem="9cd-fK-rEi" secondAttribute="centerY" id="aTb-op-IqY"/>
+                    <constraint firstItem="5sK-UT-z2O" firstAttribute="leading" secondItem="9cd-fK-rEi" secondAttribute="leading" constant="20" id="xY9-mV-zlm"/>
+                    <constraint firstAttribute="trailing" secondItem="v9d-AG-aeC" secondAttribute="trailing" constant="20" id="yoA-tw-k6Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="8ci-BJ-5Rx"/>
+            <connections>
+                <outlet property="countryLabel" destination="v9d-AG-aeC" id="u4Y-sC-eHs"/>
+                <outlet property="flagImageView" destination="5sK-UT-z2O" id="b2h-jG-3ox"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="16.741071428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="flag" width="250" height="167"/>
+    </resources>
+</document>

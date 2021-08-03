@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="fNT-5b-fvZ" customClass="DetailTableViewCell" customModule="iCovid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fNT-5b-fvZ" id="PIX-Wu-bXH">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="216"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2R0-EX-2BN">
+                        <rect key="frame" x="184" y="10" width="80" height="196"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="n6d-98-hsL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hồ Chí Minh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAM-1w-o9f">
+                        <rect key="frame" x="10" y="10" width="164" height="196"/>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yga-8D-vSm">
+                        <rect key="frame" x="279" y="10" width="80" height="196"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Mof-3e-CQc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ks4-U0-VDa">
+                        <rect key="frame" x="379" y="10" width="40" height="196"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="9Bc-1n-5tI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.20031139249999999" green="0.29061353210000002" blue="0.4157025218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="2R0-EX-2BN" firstAttribute="leading" secondItem="QAM-1w-o9f" secondAttribute="trailing" constant="10" id="0xD-od-nXK"/>
+                    <constraint firstItem="2R0-EX-2BN" firstAttribute="top" secondItem="PIX-Wu-bXH" secondAttribute="top" constant="10" id="2h4-gm-vs6"/>
+                    <constraint firstItem="Yga-8D-vSm" firstAttribute="leading" secondItem="2R0-EX-2BN" secondAttribute="trailing" constant="15" id="3FA-Rx-VG4"/>
+                    <constraint firstItem="Ks4-U0-VDa" firstAttribute="top" secondItem="PIX-Wu-bXH" secondAttribute="top" constant="10" id="790-h6-3lv"/>
+                    <constraint firstAttribute="bottom" secondItem="Ks4-U0-VDa" secondAttribute="bottom" constant="10" id="AKG-3N-G6G"/>
+                    <constraint firstItem="QAM-1w-o9f" firstAttribute="top" secondItem="PIX-Wu-bXH" secondAttribute="top" constant="10" id="BIi-Ci-rXS"/>
+                    <constraint firstItem="Yga-8D-vSm" firstAttribute="top" secondItem="PIX-Wu-bXH" secondAttribute="top" constant="10" id="KlE-ca-T3b"/>
+                    <constraint firstAttribute="trailing" secondItem="Ks4-U0-VDa" secondAttribute="trailing" constant="20" id="L6y-H7-KE4"/>
+                    <constraint firstAttribute="bottom" secondItem="Yga-8D-vSm" secondAttribute="bottom" constant="10" id="Lcc-C1-KL2"/>
+                    <constraint firstAttribute="bottom" secondItem="QAM-1w-o9f" secondAttribute="bottom" constant="10" id="dVJ-R7-VHX"/>
+                    <constraint firstItem="QAM-1w-o9f" firstAttribute="leading" secondItem="PIX-Wu-bXH" secondAttribute="leading" constant="10" id="gDH-Mg-gHZ"/>
+                    <constraint firstAttribute="bottom" secondItem="2R0-EX-2BN" secondAttribute="bottom" constant="10" id="qK6-qS-YgY"/>
+                    <constraint firstItem="Ks4-U0-VDa" firstAttribute="leading" secondItem="Yga-8D-vSm" secondAttribute="trailing" constant="20" id="ynY-ti-dAe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="nf4-EH-rme"/>
+            <connections>
+                <outlet property="casesLabel" destination="2R0-EX-2BN" id="pu1-0N-MWC"/>
+                <outlet property="deathsLabel" destination="Ks4-U0-VDa" id="Y6P-ch-Atm"/>
+                <outlet property="nameLabel" destination="QAM-1w-o9f" id="SV9-5f-qT6"/>
+                <outlet property="recoveredLabel" destination="Yga-8D-vSm" id="YQ8-4F-pGd"/>
+            </connections>
+            <point key="canvasLocation" x="235.50724637681162" y="63.616071428571423"/>
+        </tableViewCell>
+    </objects>
+</document>

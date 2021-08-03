@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CovidCollectionViewCell" customModule="iCovid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="243"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" verticalCompressionResistancePriority="755" text="Ngày:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozC-E1-op7">
+                        <rect key="frame" x="20" y="33" width="48.5" height="22"/>
+                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="754" text="Tổng số ca nhiễm:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jT9-bQ-OMV">
+                        <rect key="frame" x="20" y="75" width="153.5" height="22"/>
+                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="Số ca mắc mới:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brp-XS-YDQ">
+                        <rect key="frame" x="20" y="117" width="127" height="22"/>
+                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tổng số ca tử vong:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFH-rb-6oL">
+                        <rect key="frame" x="20" y="159" width="164" height="22"/>
+                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="753" text="Số ca tử vong mới:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-mo-XL1">
+                        <rect key="frame" x="20" y="201" width="155.5" height="22"/>
+                        <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="xnH-5t-WTT">
+                        <rect key="frame" x="185.5" y="29" width="134.5" height="194"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" verticalCompressionResistancePriority="749" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjH-JQ-5eN">
+                                <rect key="frame" x="57" y="0.0" width="21" height="22"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="751" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayt-UJ-Xh2">
+                                <rect key="frame" x="57" y="43" width="21" height="22"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzM-D2-LqU">
+                                <rect key="frame" x="57" y="86" width="21" height="22"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf0-GE-CUj">
+                                <rect key="frame" x="57" y="129" width="21" height="22"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="11890084" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnR-o9-5yY">
+                                <rect key="frame" x="25.5" y="172" width="84" height="22"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="18"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xnH-5t-WTT" firstAttribute="leading" secondItem="hbe-mo-XL1" secondAttribute="trailing" constant="10" id="6J8-HT-XkY"/>
+                <constraint firstItem="jT9-bQ-OMV" firstAttribute="top" secondItem="ozC-E1-op7" secondAttribute="bottom" constant="20" id="E1T-eN-IU0"/>
+                <constraint firstItem="hbe-mo-XL1" firstAttribute="top" secondItem="vFH-rb-6oL" secondAttribute="bottom" constant="20" id="Fxs-TE-gic"/>
+                <constraint firstAttribute="trailing" secondItem="xnH-5t-WTT" secondAttribute="trailing" constant="10" id="NJw-YV-xoY"/>
+                <constraint firstItem="hbe-mo-XL1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="S88-e2-1l4"/>
+                <constraint firstItem="Brp-XS-YDQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Sq3-g0-CbY"/>
+                <constraint firstAttribute="bottom" secondItem="xnH-5t-WTT" secondAttribute="bottom" constant="20" id="iOm-MM-OR6"/>
+                <constraint firstAttribute="bottom" secondItem="hbe-mo-XL1" secondAttribute="bottom" constant="20" id="jlX-Ob-ahB"/>
+                <constraint firstItem="ozC-E1-op7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="mbe-wm-sJB"/>
+                <constraint firstItem="vFH-rb-6oL" firstAttribute="top" secondItem="Brp-XS-YDQ" secondAttribute="bottom" constant="20" id="npE-bc-OAe"/>
+                <constraint firstItem="vFH-rb-6oL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="tSr-Jc-ZQj"/>
+                <constraint firstItem="jT9-bQ-OMV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="w6a-YQ-95J"/>
+                <constraint firstItem="Brp-XS-YDQ" firstAttribute="top" secondItem="jT9-bQ-OMV" secondAttribute="bottom" constant="20" id="zEV-96-Epr"/>
+            </constraints>
+            <size key="customSize" width="306" height="201"/>
+            <connections>
+                <outlet property="dateLabel" destination="FjH-JQ-5eN" id="3U5-z4-gdq"/>
+                <outlet property="newCasesLabel" destination="MzM-D2-LqU" id="KyL-iD-BmK"/>
+                <outlet property="newDeathLabel" destination="NnR-o9-5yY" id="1b0-tc-mSH"/>
+                <outlet property="totalCasesLabel" destination="Ayt-UJ-Xh2" id="9A2-xX-Cc8"/>
+                <outlet property="totalDeaths" destination="Lf0-GE-CUj" id="Llh-2l-T0a"/>
+            </connections>
+            <point key="canvasLocation" x="204.34782608695653" y="122.87946428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

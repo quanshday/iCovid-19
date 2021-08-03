@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  iCovid
+
+  Created by Mac on 02/08/2021.
+  
+*/
+
+"Cập nhật dịch bệnh" = "Update disease";
+"Bản đồ dịch bệnh" = "Map disease";
+"Kế hoạch" = "Plan";
+"Chi tiết dịch bệnh" = "Detail disease";
+"Bác sĩ tư vấn" = "Consulting doctor";
+"Đánh giá chúng tôi" = "Rate review";
+"Thực hiện 5K: Khẩu trang – Khử khuẩn – Khoảng cách – Không tập trung – Khai báo y tế để giữ an toàn cho Bạn và Chúng ta trước đại dịch COVID-19!" = "Implement 5K: Masks - Disinfection - Distance - Distractions - Medical Declaration to keep You and Us safe from the COVID-19 pandemic!";
+

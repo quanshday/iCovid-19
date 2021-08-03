@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Covid View Controller-->
+        <scene sceneID="bc6-GN-PO0">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="jTH-Op-W7v" customClass="DetailCovidViewController" customModule="iCovid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y5f-4j-9Pp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYP-uu-QYX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrZ-gl-OwT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_1" translatesAutoresizingMaskIntoConstraints="NO" id="zoq-wR-JxD">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Learn More Background" translatesAutoresizingMaskIntoConstraints="NO" id="7qP-oa-rIp">
+                                                <rect key="frame" x="0.0" y="50" width="414" height="191"/>
+                                            </imageView>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hVx-LH-hvi">
+                                                <rect key="frame" x="10" y="271" width="394" height="376"/>
+                                            </mapView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="b00-HD-Clw">
+                                                <rect key="frame" x="15" y="734" width="256" height="631"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Số ca nhiễm:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcS-0v-jm6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Số ca nhiễm trong ngày:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZO-J8-RIi">
+                                                        <rect key="frame" x="0.0" y="61" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số ca tử vong:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPr-z8-61R">
+                                                        <rect key="frame" x="0.0" y="122" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số ca tử vong trong ngày:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDP-ZO-HKX">
+                                                        <rect key="frame" x="0.0" y="183" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số ca điều trị thành công:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iC7-pt-klB">
+                                                        <rect key="frame" x="0.0" y="244" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số điều trị thành công trong ngày:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXP-cw-et0">
+                                                        <rect key="frame" x="0.0" y="305" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số ca hồi phục:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tU-d5-pnp">
+                                                        <rect key="frame" x="0.0" y="366" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số ca đang nguy kịch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q9-Mq-vfw">
+                                                        <rect key="frame" x="0.0" y="427" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số lượng mẫu test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umF-sY-URS">
+                                                        <rect key="frame" x="0.0" y="488" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dân số" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDJ-ra-b0N">
+                                                        <rect key="frame" x="0.0" y="549" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Châu lục" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYi-HZ-VP8">
+                                                        <rect key="frame" x="0.0" y="610" width="256" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VietNam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qd-RO-00n">
+                                                <rect key="frame" x="152.5" y="662" width="109" height="31"/>
+                                                <fontDescription key="fontDescription" name="Charter-BlackItalic" family="Charter" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1P-aH-ksR">
+                                                <rect key="frame" x="20" y="20" width="19.5" height="22"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="arrow.backward" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapBackButton:" destination="jTH-Op-W7v" eventType="touchUpInside" id="a7q-eC-4Q0"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="Lmf-kA-n7Z">
+                                                <rect key="frame" x="313" y="730" width="66" height="641"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4L-y1-7Wm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKv-J4-Ixr">
+                                                        <rect key="frame" x="0.0" y="62" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvy-4R-B4a">
+                                                        <rect key="frame" x="0.0" y="124" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-CY-qgU">
+                                                        <rect key="frame" x="0.0" y="186" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSg-by-AGJ">
+                                                        <rect key="frame" x="0.0" y="248" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8k-sw-sxI">
+                                                        <rect key="frame" x="0.0" y="310" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fU-wn-cFk">
+                                                        <rect key="frame" x="0.0" y="372" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9M-aw-Kvc">
+                                                        <rect key="frame" x="0.0" y="434" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI2-Zo-whY">
+                                                        <rect key="frame" x="0.0" y="496" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3a-Hm-p6N">
+                                                        <rect key="frame" x="0.0" y="558" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So luong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnn-AE-brt">
+                                                        <rect key="frame" x="0.0" y="620" width="66" height="21"/>
+                                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                        <color key="textColor" systemColor="systemRedColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4P-kw-To4">
+                                                <rect key="frame" x="20" y="98" width="250" height="115"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="115" id="dLi-LP-rMn"/>
+                                                    <constraint firstAttribute="width" constant="250" id="t72-8w-9ez"/>
+                                                </constraints>
+                                                <string key="text">Thực hiện "5K: Khẩu trang – Khử khuẩn – Khoảng cách – Không tập trung – Khai báo y tế" để giữ an toàn cho Bạn và Chúng ta trước đại dịch COVID-19!</string>
+                                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.19241696599999999" green="0.28288960460000001" blue="0.40393733980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="6qd-RO-00n" firstAttribute="top" secondItem="hVx-LH-hvi" secondAttribute="bottom" constant="15" id="2Oi-DU-hpW"/>
+                                            <constraint firstItem="6qd-RO-00n" firstAttribute="centerX" secondItem="QrZ-gl-OwT" secondAttribute="centerX" id="4gC-7Z-qSZ"/>
+                                            <constraint firstItem="7qP-oa-rIp" firstAttribute="top" secondItem="QrZ-gl-OwT" secondAttribute="top" constant="50" id="6Ve-5J-GIG"/>
+                                            <constraint firstItem="b00-HD-Clw" firstAttribute="leading" secondItem="QrZ-gl-OwT" secondAttribute="leading" constant="15" id="Csi-Bb-Poe"/>
+                                            <constraint firstItem="b00-HD-Clw" firstAttribute="top" secondItem="6qd-RO-00n" secondAttribute="bottom" constant="41" id="Ii0-kb-AwR"/>
+                                            <constraint firstItem="hVx-LH-hvi" firstAttribute="leading" secondItem="QrZ-gl-OwT" secondAttribute="leading" constant="10" id="JLl-BH-3PB"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lmf-kA-n7Z" secondAttribute="trailing" constant="35" id="Jfl-Iw-CZ4"/>
+                                            <constraint firstItem="Lmf-kA-n7Z" firstAttribute="top" secondItem="6qd-RO-00n" secondAttribute="bottom" constant="37" id="L9w-tV-gx7"/>
+                                            <constraint firstItem="zoq-wR-JxD" firstAttribute="leading" secondItem="QrZ-gl-OwT" secondAttribute="leading" id="NTa-EJ-O8Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="hVx-LH-hvi" secondAttribute="trailing" constant="10" id="Ofq-e2-tQI"/>
+                                            <constraint firstAttribute="height" constant="1400" id="QP5-5F-AxZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="zoq-wR-JxD" secondAttribute="bottom" id="aQx-jW-GYs"/>
+                                            <constraint firstItem="p4P-kw-To4" firstAttribute="leading" secondItem="QrZ-gl-OwT" secondAttribute="leading" constant="20" id="fBS-5V-Wwh"/>
+                                            <constraint firstItem="T1P-aH-ksR" firstAttribute="top" secondItem="QrZ-gl-OwT" secondAttribute="top" constant="20" id="gvq-Qt-075"/>
+                                            <constraint firstItem="7qP-oa-rIp" firstAttribute="leading" secondItem="QrZ-gl-OwT" secondAttribute="leading" id="h8p-tS-jXv"/>
+                                            <constraint firstItem="T1P-aH-ksR" firstAttribute="leading" secondItem="QrZ-gl-OwT" secondAttribute="leading" constant="20" id="l9R-3B-2uB"/>
+                                            <constraint firstAttribute="trailing" secondItem="7qP-oa-rIp" secondAttribute="trailing" id="led-pY-3uZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="zoq-wR-JxD" secondAttribute="trailing" id="rdT-eo-X9K"/>
+                                            <constraint firstItem="zoq-wR-JxD" firstAttribute="top" secondItem="QrZ-gl-OwT" secondAttribute="top" id="teZ-lk-XwJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="b00-HD-Clw" secondAttribute="bottom" constant="35" id="vg6-fT-G3d"/>
+                                            <constraint firstItem="p4P-kw-To4" firstAttribute="top" secondItem="T1P-aH-ksR" secondAttribute="bottom" constant="56" id="xvm-3C-Zgt"/>
+                                            <constraint firstItem="hVx-LH-hvi" firstAttribute="top" secondItem="7qP-oa-rIp" secondAttribute="bottom" constant="30" id="zKf-Wc-Ei3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19241696599999999" green="0.28288960460000001" blue="0.40393733980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="QrZ-gl-OwT" firstAttribute="leading" secondItem="JYP-uu-QYX" secondAttribute="leading" id="HRy-eO-5gF"/>
+                                    <constraint firstAttribute="trailing" secondItem="QrZ-gl-OwT" secondAttribute="trailing" id="YKC-fO-huu"/>
+                                    <constraint firstItem="QrZ-gl-OwT" firstAttribute="centerX" secondItem="JYP-uu-QYX" secondAttribute="centerX" id="dzc-A7-bbj"/>
+                                    <constraint firstItem="QrZ-gl-OwT" firstAttribute="top" secondItem="JYP-uu-QYX" secondAttribute="top" id="fSS-Rt-GDa"/>
+                                    <constraint firstAttribute="bottom" secondItem="QrZ-gl-OwT" secondAttribute="bottom" id="tI3-XD-eDX"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="N3o-p8-tQi"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="wEd-dS-XI2"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JCi-Pa-XQh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JYP-uu-QYX" firstAttribute="trailing" secondItem="JCi-Pa-XQh" secondAttribute="trailing" id="4gl-lg-dn2"/>
+                            <constraint firstItem="JYP-uu-QYX" firstAttribute="top" secondItem="Y5f-4j-9Pp" secondAttribute="top" id="DrX-Nj-sA9"/>
+                            <constraint firstItem="JYP-uu-QYX" firstAttribute="leading" secondItem="JCi-Pa-XQh" secondAttribute="leading" id="NEA-HU-O1L"/>
+                            <constraint firstAttribute="bottom" secondItem="JYP-uu-QYX" secondAttribute="bottom" id="Sc4-eQ-cRc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nWZ-nZ-wWG"/>
+                    <connections>
+                        <outlet property="activeLabel" destination="5fU-wn-cFk" id="Jrs-4T-73q"/>
+                        <outlet property="continentLabel" destination="Nnn-AE-brt" id="gzr-nD-Njy"/>
+                        <outlet property="countryLabel" destination="6qd-RO-00n" id="w1l-4i-zve"/>
+                        <outlet property="crtical" destination="b9M-aw-Kvc" id="PiO-YB-K6i"/>
+                        <outlet property="deathsLabel" destination="Dvy-4R-B4a" id="nSK-La-wIT"/>
+                        <outlet property="deathsTodayLabel" destination="R1q-CY-qgU" id="4OK-hg-dz2"/>
+                        <outlet property="mapView" destination="hVx-LH-hvi" id="grD-1q-w4D"/>
+                        <outlet property="numberCasesLabel" destination="i4L-y1-7Wm" id="IDl-tk-z1e"/>
+                        <outlet property="numberCasesTodayLabel" destination="IKv-J4-Ixr" id="JwZ-UL-K2h"/>
+                        <outlet property="populationLabel" destination="b3a-Hm-p6N" id="77z-99-Xev"/>
+                        <outlet property="recoveredLabel" destination="eSg-by-AGJ" id="6pa-8n-JQo"/>
+                        <outlet property="recoveredTodayLabel" destination="R8k-sw-sxI" id="nOh-6b-Wlh"/>
+                        <outlet property="testLabel" destination="kI2-Zo-whY" id="ulB-AX-mUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kr0-Ov-QEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2873.913043478261" y="21.428571428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XAf-ft-Cbe">
+            <objects>
+                <navigationController storyboardIdentifier="DetailCovidViewController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="j3e-wP-daY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oHi-0t-4WR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jTH-Op-W7v" kind="relationship" relationship="rootViewController" id="L44-kn-IYY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6g-Si-omD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963.7681159420292" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background_1" width="375" height="812"/>
+        <image name="Learn More Background" width="342" height="191"/>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
